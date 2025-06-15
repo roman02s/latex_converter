@@ -66,28 +66,11 @@
    cd latex_converter
     ```
 
-2. **Создайте виртуальное окружение** (Python 3.10+ желательно):
+2. **Установка и запуск**
 
    ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
+   docker compose up -d --build
    ```
-3. **Установите зависимости**:
-
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-4. **Системные зависимости** (по необходимости):
-
-   * **Tesseract OCR**:
-
-     ```bash
-     sudo apt-get install tesseract-ocr tesseract-ocr-rus
-     ```
-   * **Poppler/fitz**, **OpenCV**, **PIL**, **pdfplumber**, **PyPDF2** — через `pip`.
-   * **pix2tex** (LatexOCR) и **marker** (MarkerPDF) — через `requirements.txt`.
-
 ---
 
 ## Конфигурация
